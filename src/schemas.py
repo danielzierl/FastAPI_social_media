@@ -14,7 +14,8 @@ class PostBase(BaseModel):
 
 class PostCreate(PostBase):
     pass
-
+    class Config:
+        orm_mode = True
 
 
 
